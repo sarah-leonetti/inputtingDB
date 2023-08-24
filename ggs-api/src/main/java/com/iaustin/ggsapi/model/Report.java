@@ -27,7 +27,7 @@ public class Report {
     private String report_type; //email related, browswer related, device related, etc.
 
     @NotNull
-    //@ManyToOne(mappedby = 'users_id') //what does this string rely on? (doesnt have to be a direct name)
+    //@ManyToOne(mappedby = 'users_id') //
     private String user;
     private Boolean ggs_fix;
 

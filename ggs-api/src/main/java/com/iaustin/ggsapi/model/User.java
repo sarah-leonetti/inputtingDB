@@ -7,10 +7,32 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
+import jakarta.persistence.JoinColumn;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+
+
+/*
+ * enum userRoleEnum {
+   primary ("PRIMARY USER"),
+    guardian ("GUARDIAN"),
+    employee("EMPLOYEE");
+    String role;
+
+    userRoleEnum(String relation){
+        this.role = role;
+    }
+
+}
+
+ * 
+ * 
+ */
+
 
 @Data
 @NoArgsConstructor
@@ -23,6 +45,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@OneToOne  - getting an error when I apply this
     private Long id;
 
     private String username;
