@@ -46,6 +46,8 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     //@OneToOne  - getting an error when I apply this
+   
+
     private Long id;
 
     private String username;

@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
 
 @Data
@@ -26,8 +27,8 @@ public class Report {
    
     private String report_type; //email related, browswer related, device related, etc.
 
-    @NotNull
-    //@ManyToOne(mappedby = 'users_id') //
+    //@NotNull
+  // @ManyToOne(mappedby = "users_id") 
     private String user;
     private Boolean ggs_fix;
 
