@@ -35,6 +35,8 @@ public class EducationItemServiceImpl implements EducationItemService {
         return edu.getIsActive();
     }
 
+  
+
 }
     
     

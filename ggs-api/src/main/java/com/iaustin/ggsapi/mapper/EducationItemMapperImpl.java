@@ -14,6 +14,6 @@ public class EducationItemMapperImpl implements EducationItemMapper {
         if (educationitem == null) {
             return null;
         }
-        return new EducationItemDto(educationitem.getId(), educationitem.getName(), educationitem.getCategoryId());
+        return new EducationItemDto(educationitem.getId(), educationitem.getName());
     }
 }

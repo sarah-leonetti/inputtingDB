@@ -13,5 +13,8 @@ public interface EducationItemRepository extends JpaRepository<EducationItem, Lo
 
     Optional<EducationItem> findById(Long id);
 
+
+
+    
     //List<EducationItem> findByCategoryId(Long categoryId);
 }

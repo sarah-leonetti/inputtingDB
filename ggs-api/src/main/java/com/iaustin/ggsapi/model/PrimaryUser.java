@@ -17,6 +17,9 @@ public class PrimaryUser extends User {
     //from user table
     @Column(nullable = false) // for the demo , we will have this commented because we will have elderly sign up on their own. we will  need guardians for the MVP
     @Id
+
+
+    
     @ManyToOne
     @JoinColumn(name = "guardian_id") //JOIN COLUMN  = FOREIGN KEY ...MAPPED BY =OWNING
     

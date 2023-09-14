@@ -11,6 +11,9 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
+
+
+
 @Entity
 @Table(name = "tbl_education_article")
 public class EducationArticle extends EducationItem{

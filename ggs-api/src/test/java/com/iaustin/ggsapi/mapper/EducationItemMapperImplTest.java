@@ -20,8 +20,8 @@ public class EducationItemMapperImplTest {
         EducationItem edu = new EducationItem();
         edu.setId(1L);
         edu.setName("testEdu");
-        edu.setCategoryId(1L);
-        EducationItemDto eduDto = new EducationItemDto(edu.getId(), edu.getName(), edu.getCategoryId());
+       // edu.setType("VIDEO");
+        EducationItemDto eduDto = new EducationItemDto(edu.getId(), edu.getName());
         EducationItemDto implDto = educationItemMapperImpl.toEducationItemDto(edu);
         assertEquals(eduDto, implDto);
     }

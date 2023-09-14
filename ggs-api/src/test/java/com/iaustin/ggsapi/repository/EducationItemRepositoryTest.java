@@ -18,7 +18,7 @@ public class EducationItemRepositoryTest {
         EducationItem educationItem = new EducationItem();
         educationItem.setId(1L);
         educationItem.setName("test");
-        educationItem.setCategoryId(1L);
+        //educationItem.setCategoryId("SCAMS");
         // Save the EducationItem
         EducationItem savedEducationItem = educationItemRepository.save(educationItem);
         // Display successful save
@@ -54,12 +54,12 @@ public class EducationItemRepositoryTest {
         EducationItem educationItem2 = new EducationItem();
         educationItem2.setId(2L);
         educationItem2.setName("test2");
-        educationItem2.setCategoryId(2L);
+      //  educationItem2.setCategoryId(2L);
         // Create a educationItem
         EducationItem educationItem3 = new EducationItem();
         educationItem3.setId(3L);
         educationItem3.setName("test3");
-        educationItem3.setCategoryId(3L);
+       // educationItem3.setCategoryId(3L);
         // Save the categories
         Iterable<EducationItem> savedCategories = educationItemRepository
                 .saveAll(java.util.Arrays.asList(educationItem2, educationItem3));
